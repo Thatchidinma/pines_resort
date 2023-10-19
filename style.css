@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-image: url(./images/background-blur.jpg);
+    background-position:center;
+    background-attachment: fixed;
+}
+
+body{
+    background-color: rgba(0, 162, 255, 0.2);
+}
+    
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: rgb(0, 162, 255);
+}
+
+ul{
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+a{
+    display: block;
+    padding:1rem;
+    text-decoration-line: none;
+    text-align: center;
+}
+
+a:hover{
+    background-color: rgb(55, 154, 216);
+}
+#home{
+    background-image: url(images/laurine-bailly.jpg);
+    background-position:center;
+    background-attachment: fixed;
+}
+
+section{
+    /*border: 3px solid hotpink;*/ 
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spacebetween{
+    /* border: 3px solid blue; */
+    height:30vh ;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+h1{
+    font-size:3rem ;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 166, 255);
+}
+
+h2{
+    color: rgb(55, 154, 216);
+}
+
+strong{
+    color: inherit;
+}
+
+h3{
+    font-weight: 600;
+    text-align: center;
+    /* color: rgb(79, 145, 185); */
+    color: lightskyblue;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactus{
+    width: 100%;
+    font-size: 3rem;
+    color: rgb(55, 154, 216) ;
+}
+
+.services{
+    list-style-type: disc;
+    padding-bottom: 5px;
+}
+
+.ourservices{
+    display: block;
+    padding: 10px;
+}
+
+article>ul{
+    list-style: circle;
+}
+
+.contactus_layout{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    background-color: none;
+}
+
+.articles{
+    width: 33.1%;
+    padding:1rem;
+    border: 5px double  rgb(223, 176, 113);
+    border-radius: 5px;
+    margin: .5rem;
+    background-color:lightskyblue ;
+}
+
+section>.articles{
+    width: 80%;
+}
+
+button{
+    font-size:1rem ;
+    font-weight:700 ;
+    background-color: transparent;
+    /* color: rgb(202, 250, 234); */
+    border: 2px solid ;
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+
+button:hover{
+    background-color:rgb(180, 135, 76);
+    color: lightskyblue;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>a{
+    padding: 0.5rem;
+}
+
+footer>a:hover{
+    background-color: transparent;
+}
+
+img{
+    height: 20px;
+    width: 20px;
+}
+
+@media only screen and (max-width: 550px){
+    nav{
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+    }
+    
+    h1{
+        font-size:2rem ;
+        font-weight: 400;
+    }
+    
+    h3,button{
+        font-size: 0.9rem;
+    }
+    
+    .contactus{
+        font-size: 2rem;
+    }
+    .contactus_layout{
+        flex-flow: column wrap;
+    }
+    
+    .articles{
+        width: 100%;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    
+    .contactus_layout:first-child{
+        margin-top: 0;
+    }
+    
+}
